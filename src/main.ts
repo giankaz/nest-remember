@@ -8,7 +8,7 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true, // não deixa oq nao estiver no dto passar mas nao estoura erro
-      //forbidNonWhitelisted: true, //estoura um erro caso algo não esteja no dto
+      //forbidNonWhitelisted: true, //estoura um erro caso algo não esteja no dtos
       transform: true, // transforma as instancias do dto em realmente o que esta no dto
       transformOptions: {
         enableImplicitConversion: true,
